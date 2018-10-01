@@ -1,0 +1,229 @@
+/* cool website coolers.ca*/
+/*
+#A7CECB - Pastel Blue
+#8BA6A9 - Pewter Blue
+#75704E - French Bistre
+#CACC90 - Medium Spring Bud
+#F4EBBE - Lemon
+*/
+
+/* Global styles */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #a7cecb;
+  font-family: verdana;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: "Open Sans", cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+.contact-info a {
+  color: lightblue;
+  font-size: 300%;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  background: #ef233c;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header and Footer */
+header,
+footer {
+  background: #3a549b;
+  color: #f4ebbe;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+.profile-img {
+  border-radius: 6px;
+  width: 10px;
+}
+header h1,
+header h2 {
+  color: #f4ebbe;
+  margin: 0;
+  /* clear: both; Clears left and right floats */
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  display: inline-block;
+  /* background: white; */
+  padding: 10px;
+}
+footer h2 {
+  margin-bottom: 16px;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3a549b;
+}
+
+/* Work Experience */
+.work {
+  background: #d3d0cb;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/nature3.jpg") no-repeat fixed;
+  background-size: cover;
+  /* User overflow: auto; to have scroll bar for long text. Maybe add like an arrow button to expand everything */
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+/* Projects */
+.projects {
+  background: #9fb1bc;
+}
+
+/* Education */
+.education {
+  background: #6e8898;
+}
+p + h3 {
+  margin-top: 30px;
+}
+h3 + h4 {
+  margin: 0;
+}
+
+/* Interests */
+.interests {
+  background: #6879a5;
+}
+
+/* Media Queries */
+@media (min-width: 1025px) {
+  .column-narrow {
+    width: 30%;
+    float: left;
+  }
+  .column-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+  .topic-mobile,
+  .name-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  .job-description {
+    margin-top: 25px;
+  }
+  nav {
+    display: none;
+  }
+  .topic-mobile {
+    position: sticky;
+    top: -1px;
+
+    padding: 15px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3a549b;
+
+    text-align: center;
+    background-color: white;
+  }
+  .name-mobile {
+    display: none;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+
+    padding: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3a549b;
+
+    text-align: center;
+    background-color: white; */
+  }
+}
+/* 
+@media (max-width: 414px) {
+  .content-wrap {
+    padding: 110px 50px 60px;
+  }
+} */
